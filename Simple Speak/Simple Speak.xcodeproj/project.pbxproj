@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19A2BE81229ED78F00531C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A2BE80229ED78F00531C09 /* AppDelegate.swift */; };
+		19A2BE83229ED78F00531C09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A2BE82229ED78F00531C09 /* ViewController.swift */; };
+		19A2BE86229ED78F00531C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A2BE84229ED78F00531C09 /* Main.storyboard */; };
+		19A2BE89229ED78F00531C09 /* Simple_Speak.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19A2BE87229ED78F00531C09 /* Simple_Speak.xcdatamodeld */; };
+		19A2BE8B229ED79100531C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19A2BE8A229ED79100531C09 /* Assets.xcassets */; };
+		19A2BE8E229ED79100531C09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A2BE8C229ED79100531C09 /* LaunchScreen.storyboard */; };
+		19A2BE99229ED79100531C09 /* Simple_SpeakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A2BE98229ED79100531C09 /* Simple_SpeakTests.swift */; };
+		19A2BEA4229ED79100531C09 /* Simple_SpeakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A2BEA3229ED79100531C09 /* Simple_SpeakUITests.swift */; };
+		19F96280229F4DEC008F2B68 /* textToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F9627F229F4DEC008F2B68 /* textToSpeech.swift */; };
+		19F96283229F4EF8008F2B68 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F96282229F4EF8008F2B68 /* AVFoundation.framework */; };
+		19F96287229F784D008F2B68 /* makeYourOwn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F96286229F784D008F2B68 /* makeYourOwn.swift */; };
+		19F9630522A08495008F2B68 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F9630322A08495008F2B68 /* Interface.storyboard */; };
+		19F9630722A08495008F2B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F9630622A08495008F2B68 /* Assets.xcassets */; };
+		19F9630E22A08496008F2B68 /* Simple Speak on Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 19F9630D22A08496008F2B68 /* Simple Speak on Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		19F9631322A08496008F2B68 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F9631222A08496008F2B68 /* InterfaceController.swift */; };
+		19F9631522A08496008F2B68 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F9631422A08496008F2B68 /* ExtensionDelegate.swift */; };
+		19F9631722A08496008F2B68 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F9631622A08496008F2B68 /* NotificationController.swift */; };
+		19F9631922A08496008F2B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F9631822A08496008F2B68 /* Assets.xcassets */; };
+		19F9631E22A08496008F2B68 /* Simple Speak on Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 19F9630122A08495008F2B68 /* Simple Speak on Watch.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19A2BE95229ED79100531C09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19A2BE75229ED78F00531C09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19A2BE7C229ED78F00531C09;
+			remoteInfo = "Simple Speak";
+		};
+		19A2BEA0229ED79100531C09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19A2BE75229ED78F00531C09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19A2BE7C229ED78F00531C09;
+			remoteInfo = "Simple Speak";
+		};
+		19F9630F22A08496008F2B68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19A2BE75229ED78F00531C09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19F9630C22A08496008F2B68;
+			remoteInfo = "Simple Speak on Watch Extension";
+		};
+		19F9631C22A08496008F2B68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19A2BE75229ED78F00531C09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19F9630022A08495008F2B68;
+			remoteInfo = "Simple Speak on Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19F9632422A08496008F2B68 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				19F9630E22A08496008F2B68 /* Simple Speak on Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F9632622A08496008F2B68 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				19F9631E22A08496008F2B68 /* Simple Speak on Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19A2BE7D229ED78F00531C09 /* Simple Speak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Speak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19A2BE80229ED78F00531C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19A2BE82229ED78F00531C09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19A2BE85229ED78F00531C09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19A2BE88229ED78F00531C09 /* Simple_Speak.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Simple_Speak.xcdatamodel; sourceTree = "<group>"; };
+		19A2BE8A229ED79100531C09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19A2BE8D229ED79100531C09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19A2BE8F229ED79100531C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19A2BE94229ED79100531C09 /* Simple SpeakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple SpeakTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19A2BE98229ED79100531C09 /* Simple_SpeakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_SpeakTests.swift; sourceTree = "<group>"; };
+		19A2BE9A229ED79100531C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19A2BE9F229ED79100531C09 /* Simple SpeakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple SpeakUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19A2BEA3229ED79100531C09 /* Simple_SpeakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_SpeakUITests.swift; sourceTree = "<group>"; };
+		19A2BEA5229ED79100531C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F9627F229F4DEC008F2B68 /* textToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textToSpeech.swift; sourceTree = "<group>"; };
+		19F96282229F4EF8008F2B68 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		19F96286229F784D008F2B68 /* makeYourOwn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeYourOwn.swift; sourceTree = "<group>"; };
+		19F9630122A08495008F2B68 /* Simple Speak on Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Speak on Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F9630422A08495008F2B68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		19F9630622A08495008F2B68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19F9630822A08495008F2B68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F9630D22A08496008F2B68 /* Simple Speak on Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Simple Speak on Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F9631222A08496008F2B68 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		19F9631422A08496008F2B68 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		19F9631622A08496008F2B68 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		19F9631822A08496008F2B68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19F9631A22A08496008F2B68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F9631B22A08496008F2B68 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19A2BE7A229ED78F00531C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F96283229F4EF8008F2B68 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19A2BE91229ED79100531C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19A2BE9C229ED79100531C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F9630A22A08496008F2B68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19A2BE74229ED78F00531C09 = {
+			isa = PBXGroup;
+			children = (
+				19A2BE7F229ED78F00531C09 /* Simple Speak */,
+				19A2BE97229ED79100531C09 /* Simple SpeakTests */,
+				19A2BEA2229ED79100531C09 /* Simple SpeakUITests */,
+				19F9630222A08495008F2B68 /* Simple Speak on Watch */,
+				19F9631122A08496008F2B68 /* Simple Speak on Watch Extension */,
+				19A2BE7E229ED78F00531C09 /* Products */,
+				19F96281229F4EF8008F2B68 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		19A2BE7E229ED78F00531C09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19A2BE7D229ED78F00531C09 /* Simple Speak.app */,
+				19A2BE94229ED79100531C09 /* Simple SpeakTests.xctest */,
+				19A2BE9F229ED79100531C09 /* Simple SpeakUITests.xctest */,
+				19F9630122A08495008F2B68 /* Simple Speak on Watch.app */,
+				19F9630D22A08496008F2B68 /* Simple Speak on Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19A2BE7F229ED78F00531C09 /* Simple Speak */ = {
+			isa = PBXGroup;
+			children = (
+				19F9627F229F4DEC008F2B68 /* textToSpeech.swift */,
+				19F96286229F784D008F2B68 /* makeYourOwn.swift */,
+				19A2BE80229ED78F00531C09 /* AppDelegate.swift */,
+				19A2BE82229ED78F00531C09 /* ViewController.swift */,
+				19A2BE84229ED78F00531C09 /* Main.storyboard */,
+				19A2BE8A229ED79100531C09 /* Assets.xcassets */,
+				19A2BE8C229ED79100531C09 /* LaunchScreen.storyboard */,
+				19A2BE8F229ED79100531C09 /* Info.plist */,
+				19A2BE87229ED78F00531C09 /* Simple_Speak.xcdatamodeld */,
+			);
+			path = "Simple Speak";
+			sourceTree = "<group>";
+		};
+		19A2BE97229ED79100531C09 /* Simple SpeakTests */ = {
+			isa = PBXGroup;
+			children = (
+				19A2BE98229ED79100531C09 /* Simple_SpeakTests.swift */,
+				19A2BE9A229ED79100531C09 /* Info.plist */,
+			);
+			path = "Simple SpeakTests";
+			sourceTree = "<group>";
+		};
+		19A2BEA2229ED79100531C09 /* Simple SpeakUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19A2BEA3229ED79100531C09 /* Simple_SpeakUITests.swift */,
+				19A2BEA5229ED79100531C09 /* Info.plist */,
+			);
+			path = "Simple SpeakUITests";
+			sourceTree = "<group>";
+		};
+		19F96281229F4EF8008F2B68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19F96282229F4EF8008F2B68 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19F9630222A08495008F2B68 /* Simple Speak on Watch */ = {
+			isa = PBXGroup;
+			children = (
+				19F9630322A08495008F2B68 /* Interface.storyboard */,
+				19F9630622A08495008F2B68 /* Assets.xcassets */,
+				19F9630822A08495008F2B68 /* Info.plist */,
+			);
+			path = "Simple Speak on Watch";
+			sourceTree = "<group>";
+		};
+		19F9631122A08496008F2B68 /* Simple Speak on Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				19F9631222A08496008F2B68 /* InterfaceController.swift */,
+				19F9631422A08496008F2B68 /* ExtensionDelegate.swift */,
+				19F9631622A08496008F2B68 /* NotificationController.swift */,
+				19F9631822A08496008F2B68 /* Assets.xcassets */,
+				19F9631A22A08496008F2B68 /* Info.plist */,
+				19F9631B22A08496008F2B68 /* PushNotificationPayload.apns */,
+			);
+			path = "Simple Speak on Watch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19A2BE7C229ED78F00531C09 /* Simple Speak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19A2BEA8229ED79100531C09 /* Build configuration list for PBXNativeTarget "Simple Speak" */;
+			buildPhases = (
+				19A2BE79229ED78F00531C09 /* Sources */,
+				19A2BE7A229ED78F00531C09 /* Frameworks */,
+				19A2BE7B229ED78F00531C09 /* Resources */,
+				19F9632622A08496008F2B68 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19F9631D22A08496008F2B68 /* PBXTargetDependency */,
+			);
+			name = "Simple Speak";
+			productName = "Simple Speak";
+			productReference = 19A2BE7D229ED78F00531C09 /* Simple Speak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19A2BE93229ED79100531C09 /* Simple SpeakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19A2BEAB229ED79100531C09 /* Build configuration list for PBXNativeTarget "Simple SpeakTests" */;
+			buildPhases = (
+				19A2BE90229ED79100531C09 /* Sources */,
+				19A2BE91229ED79100531C09 /* Frameworks */,
+				19A2BE92229ED79100531C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19A2BE96229ED79100531C09 /* PBXTargetDependency */,
+			);
+			name = "Simple SpeakTests";
+			productName = "Simple SpeakTests";
+			productReference = 19A2BE94229ED79100531C09 /* Simple SpeakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19A2BE9E229ED79100531C09 /* Simple SpeakUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19A2BEAE229ED79100531C09 /* Build configuration list for PBXNativeTarget "Simple SpeakUITests" */;
+			buildPhases = (
+				19A2BE9B229ED79100531C09 /* Sources */,
+				19A2BE9C229ED79100531C09 /* Frameworks */,
+				19A2BE9D229ED79100531C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19A2BEA1229ED79100531C09 /* PBXTargetDependency */,
+			);
+			name = "Simple SpeakUITests";
+			productName = "Simple SpeakUITests";
+			productReference = 19A2BE9F229ED79100531C09 /* Simple SpeakUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		19F9630022A08495008F2B68 /* Simple Speak on Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F9632522A08496008F2B68 /* Build configuration list for PBXNativeTarget "Simple Speak on Watch" */;
+			buildPhases = (
+				19F962FF22A08495008F2B68 /* Resources */,
+				19F9632422A08496008F2B68 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19F9631022A08496008F2B68 /* PBXTargetDependency */,
+			);
+			name = "Simple Speak on Watch";
+			productName = "Simple Speak on Watch";
+			productReference = 19F9630122A08495008F2B68 /* Simple Speak on Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		19F9630C22A08496008F2B68 /* Simple Speak on Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F9632322A08496008F2B68 /* Build configuration list for PBXNativeTarget "Simple Speak on Watch Extension" */;
+			buildPhases = (
+				19F9630922A08496008F2B68 /* Sources */,
+				19F9630A22A08496008F2B68 /* Frameworks */,
+				19F9630B22A08496008F2B68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simple Speak on Watch Extension";
+			productName = "Simple Speak on Watch Extension";
+			productReference = 19F9630D22A08496008F2B68 /* Simple Speak on Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19A2BE75229ED78F00531C09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Emma Koslow";
+				TargetAttributes = {
+					19A2BE7C229ED78F00531C09 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					19A2BE93229ED79100531C09 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 19A2BE7C229ED78F00531C09;
+					};
+					19A2BE9E229ED79100531C09 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 19A2BE7C229ED78F00531C09;
+					};
+					19F9630022A08495008F2B68 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					19F9630C22A08496008F2B68 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 19A2BE78229ED78F00531C09 /* Build configuration list for PBXProject "Simple Speak" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19A2BE74229ED78F00531C09;
+			productRefGroup = 19A2BE7E229ED78F00531C09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19A2BE7C229ED78F00531C09 /* Simple Speak */,
+				19A2BE93229ED79100531C09 /* Simple SpeakTests */,
+				19A2BE9E229ED79100531C09 /* Simple SpeakUITests */,
+				19F9630022A08495008F2B68 /* Simple Speak on Watch */,
+				19F9630C22A08496008F2B68 /* Simple Speak on Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19A2BE7B229ED78F00531C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A2BE8E229ED79100531C09 /* LaunchScreen.storyboard in Resources */,
+				19A2BE8B229ED79100531C09 /* Assets.xcassets in Resources */,
+				19A2BE86229ED78F00531C09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19A2BE92229ED79100531C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19A2BE9D229ED79100531C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F962FF22A08495008F2B68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F9630722A08495008F2B68 /* Assets.xcassets in Resources */,
+				19F9630522A08495008F2B68 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F9630B22A08496008F2B68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F9631922A08496008F2B68 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19A2BE79229ED78F00531C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A2BE89229ED78F00531C09 /* Simple_Speak.xcdatamodeld in Sources */,
+				19F96287229F784D008F2B68 /* makeYourOwn.swift in Sources */,
+				19F96280229F4DEC008F2B68 /* textToSpeech.swift in Sources */,
+				19A2BE83229ED78F00531C09 /* ViewController.swift in Sources */,
+				19A2BE81229ED78F00531C09 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19A2BE90229ED79100531C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A2BE99229ED79100531C09 /* Simple_SpeakTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19A2BE9B229ED79100531C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A2BEA4229ED79100531C09 /* Simple_SpeakUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F9630922A08496008F2B68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F9631722A08496008F2B68 /* NotificationController.swift in Sources */,
+				19F9631522A08496008F2B68 /* ExtensionDelegate.swift in Sources */,
+				19F9631322A08496008F2B68 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19A2BE96229ED79100531C09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19A2BE7C229ED78F00531C09 /* Simple Speak */;
+			targetProxy = 19A2BE95229ED79100531C09 /* PBXContainerItemProxy */;
+		};
+		19A2BEA1229ED79100531C09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19A2BE7C229ED78F00531C09 /* Simple Speak */;
+			targetProxy = 19A2BEA0229ED79100531C09 /* PBXContainerItemProxy */;
+		};
+		19F9631022A08496008F2B68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19F9630C22A08496008F2B68 /* Simple Speak on Watch Extension */;
+			targetProxy = 19F9630F22A08496008F2B68 /* PBXContainerItemProxy */;
+		};
+		19F9631D22A08496008F2B68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19F9630022A08495008F2B68 /* Simple Speak on Watch */;
+			targetProxy = 19F9631C22A08496008F2B68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19A2BE84229ED78F00531C09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19A2BE85229ED78F00531C09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19A2BE8C229ED79100531C09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19A2BE8D229ED79100531C09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		19F9630322A08495008F2B68 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19F9630422A08495008F2B68 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19A2BEA6229ED79100531C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19A2BEA7229ED79100531C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19A2BEA9229ED79100531C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NN7R384CT;
+				INFOPLIST_FILE = "Simple Speak/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emma-Koslow.Simple-Speak";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19A2BEAA229ED79100531C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NN7R384CT;
+				INFOPLIST_FILE = "Simple Speak/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emma-Koslow.Simple-Speak";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		19A2BEAC229ED79100531C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Simple SpeakTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emma-Koslow.Simple-SpeakTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Speak.app/Simple Speak";
+			};
+			name = Debug;
+		};
+		19A2BEAD229ED79100531C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Simple SpeakTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emma-Koslow.Simple-SpeakTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Speak.app/Simple Speak";
+			};
+			name = Release;
+		};
+		19A2BEAF229ED79100531C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Simple SpeakUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emma-Koslow.Simple-SpeakUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Simple Speak";
+			};
+			name = Debug;
+		};
+		19A2BEB0229ED79100531C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Simple SpeakUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emma-Koslow.Simple-SpeakUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Simple Speak";
+			};
+			name = Release;
+		};
+		19F9631F22A08496008F2B68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NN7R384CT;
+				IBSC_MODULE = Simple_Speak_on_Watch_Extension;
+				INFOPLIST_FILE = "Simple Speak on Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emma-Koslow.Simple-Speak.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		19F9632022A08496008F2B68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NN7R384CT;
+				IBSC_MODULE = Simple_Speak_on_Watch_Extension;
+				INFOPLIST_FILE = "Simple Speak on Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emma-Koslow.Simple-Speak.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		19F9632122A08496008F2B68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NN7R384CT;
+				INFOPLIST_FILE = "Simple Speak on Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emma-Koslow.Simple-Speak.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		19F9632222A08496008F2B68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NN7R384CT;
+				INFOPLIST_FILE = "Simple Speak on Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emma-Koslow.Simple-Speak.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19A2BE78229ED78F00531C09 /* Build configuration list for PBXProject "Simple Speak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19A2BEA6229ED79100531C09 /* Debug */,
+				19A2BEA7229ED79100531C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19A2BEA8229ED79100531C09 /* Build configuration list for PBXNativeTarget "Simple Speak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19A2BEA9229ED79100531C09 /* Debug */,
+				19A2BEAA229ED79100531C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19A2BEAB229ED79100531C09 /* Build configuration list for PBXNativeTarget "Simple SpeakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19A2BEAC229ED79100531C09 /* Debug */,
+				19A2BEAD229ED79100531C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19A2BEAE229ED79100531C09 /* Build configuration list for PBXNativeTarget "Simple SpeakUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19A2BEAF229ED79100531C09 /* Debug */,
+				19A2BEB0229ED79100531C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19F9632322A08496008F2B68 /* Build configuration list for PBXNativeTarget "Simple Speak on Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F9632122A08496008F2B68 /* Debug */,
+				19F9632222A08496008F2B68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19F9632522A08496008F2B68 /* Build configuration list for PBXNativeTarget "Simple Speak on Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F9631F22A08496008F2B68 /* Debug */,
+				19F9632022A08496008F2B68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		19A2BE87229ED78F00531C09 /* Simple_Speak.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				19A2BE88229ED78F00531C09 /* Simple_Speak.xcdatamodel */,
+			);
+			currentVersion = 19A2BE88229ED78F00531C09 /* Simple_Speak.xcdatamodel */;
+			path = Simple_Speak.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 19A2BE75229ED78F00531C09 /* Project object */;
+}
